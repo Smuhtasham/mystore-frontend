@@ -20,7 +20,7 @@ export default function LoginPage() {
         { withCredentials: true }
       );
       login(); // Update the authentication state in context
-      router.push("/products");
+      router.replace("/products");
     } catch (err: any) {
       console.error("Login failed", err);
       alert(err.message || "Login failed. Please try again.");

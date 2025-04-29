@@ -11,7 +11,7 @@ export default function Navbar() {
 
   const handleLogout = () => {
     removeSession();
-    router.navigate("/login");
+    router.replace("/login");
   };
 
   return (

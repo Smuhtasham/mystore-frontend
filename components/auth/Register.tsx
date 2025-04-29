@@ -13,7 +13,7 @@ export default function RegisterPage() {
     e.preventDefault();
     try {
       await api.post("/auth/register", { email, password });
-      router.push("/login");
+      router.replace("/login");
     } catch (err) {
       console.error("Registration failed", err);
     }
