@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import axios from "axios";
 import { redirect, useRouter } from "next/navigation";
 import { api } from "@/utils/api";
 import Link from "next/link";
